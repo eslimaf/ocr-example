@@ -7,8 +7,8 @@ import android.view.ViewGroup
 
 
 class CameraPreview : ViewGroup, SurfaceHolder.Callback {
-    lateinit var mSurfaceView : SurfaceView
-    lateinit var mSurfaceHolder : SurfaceHolder
+    private var mSurfaceView : SurfaceView
+    private var mSurfaceHolder : SurfaceHolder
 
     constructor(context: Context?) : super(context) {
         mSurfaceView = SurfaceView(context)
